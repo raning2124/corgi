@@ -8,6 +8,7 @@
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>9</version>
+        <relativePath/>
     </parent>
 
     <!--  基础信息  -->
@@ -32,6 +33,7 @@
     <properties>
         <revision>1.0.0-SNAPSHOT</revision>
         <jdk.version>1.8</jdk.version>
+        <springboot.version>2.7.18</springboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -136,6 +138,13 @@
         </plugins>
         <pluginManagement>
             <plugins>
+                <!-- SpringBoot 插件管理 -->
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${springboot.version}</version>
+                </plugin>
+
                 <plugin>
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>

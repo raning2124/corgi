@@ -1,0 +1,22 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: corgi-gateway
+  config:
+    import:
+      - optional:nacos:${spring.application.name}.yml
+  cloud:
+    nacos:
+      server-addr: ${nacos.server}
+      username: ${nacos.username}
+      password: ${nacos.password}
+      discovery:
+        namespace: ${nacos.namespace}
+        group: DEFAULT_GROUP
+      config:
+        namespace: ${nacos.namespace}
+        group: DEFAULT_GROUP
+        file-extension: yml
+        refresh-enabled: true
