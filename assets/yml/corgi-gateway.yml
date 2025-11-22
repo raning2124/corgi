@@ -1,0 +1,16 @@
+server:
+  port: 8000
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - AddRequestHeader=token,888
+      routes:
+        - id: static_route_demo
+          uri: http://127.0.0.1:${server.port}
+          predicates:
+            - Path=/echo/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/api

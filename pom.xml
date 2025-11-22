@@ -27,6 +27,7 @@
         <module>corgi-dependencies</module>
         <module>corgi-gateway</module>
         <module>corgi-auth</module>
+        <module>corgi-common</module>
     </modules>
 
     <!--  项目属性  -->
@@ -79,6 +80,13 @@
 
     <!-- 项目构建 -->
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

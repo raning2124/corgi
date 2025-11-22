@@ -1,2 +1,8 @@
 server:
   port: 8000
+
+
+logging:
+  level:
+    org.springframework: warn
+  config: classpath:logback-plus.xml

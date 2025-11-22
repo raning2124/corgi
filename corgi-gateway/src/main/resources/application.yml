@@ -20,3 +20,8 @@ spring:
         group: DEFAULT_GROUP
         file-extension: yml
         refresh-enabled: true
+
+logging:
+  level:
+    org.springframework: warn
+  config: classpath:logback-plus.xml

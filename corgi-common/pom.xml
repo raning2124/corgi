@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.guo</groupId>
+        <artifactId>corgi-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <groupId>cn.guo.corgi.common</groupId>
+    <artifactId>corgi-common</artifactId>
+    <packaging>pom</packaging>
+
+    <name>corgi-common</name>
+
+    <description>
+        通用组件
+    </description>
+
+    <modules>
+        <module>corgi-common-web</module>
+        <module>corgi-common-core</module>
+    </modules>
+
+
+</project>
