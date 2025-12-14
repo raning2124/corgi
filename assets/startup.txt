@@ -1,4 +1,4 @@
---nacos.server=172.26.20.212:8848
+--nacos.server=115.190.114.209:8848
 --nacos.username=nacos
---nacos.password=520170
+--nacos.password=lGyF1234&
 --nacos.namespace=java
